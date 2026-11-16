@@ -1,3 +1,4 @@
+import 'package:campus_lost_and_found/secrets.dart';
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'auth/auth_gate.dart';
@@ -7,7 +8,7 @@ Future<void> main() async {
 
   await Supabase.initialize(
     url: 'https://qtwdwfkonzoixpdlbnqn.supabase.co',
-    publishableKey: const String.fromEnvironment('SILLYLITTLEAPIKEY'),
+    publishableKey: supabaseKey,
   );
 
   runApp(const MyApp());
